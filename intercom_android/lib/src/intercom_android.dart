@@ -83,22 +83,6 @@ class AndroidIntercom extends IntercomPlatform {
   }
 
   @override
-  Future<void> updateUser({
-    String? email,
-    String? name,
-    String? phone,
-    String? company,
-    String? companyId,
-    String? userId,
-    int? signedUpAt,
-    String? language,
-    Map<String, dynamic>? customAttributes,
-    IntercomStatusCallback? statusCallback,
-  }) {
-    throw UnimplementedError('updateUser() has not been implemented.');
-  }
-
-  @override
   Future<void> logout() {
     return _intercomApi.logout();
   }
