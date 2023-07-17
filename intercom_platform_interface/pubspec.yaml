@@ -1,0 +1,17 @@
+name: intercom_platform_interface
+description: A common platform interface for the intercom_plugin.
+version: 1.0.0
+homepage:
+repository:
+
+dependencies:
+  flutter:
+    sdk: flutter
+  plugin_platform_interface: ^2.1.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
