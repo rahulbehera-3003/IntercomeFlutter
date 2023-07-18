@@ -9,10 +9,10 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
 A new Flutter project.
                        DESC
-  s.homepage         = 'http://example.com'
-  s.license          = { :file => '../LICENSE' }
-  s.author           = { 'Igniscor' => 'email@example.com' }
-  s.source           = { :path => '.' }
+  s.homepage         = 'https://github.com/chuvakpavel/IntercomeFlutter/tree/main/intercom_ios'
+  s.license          = { :type => 'BSD', :file => '../LICENSE' }
+  s.author           = { 'Igniscor' => 'chuvak.pavel@gmail.com' }
+  s.source           = { :http => 'https://github.com/chuvakpavel/IntercomeFlutter/tree/main/intercom_ios' }
   s.source_files = 'Classes/**/*'
   s.public_header_files = 'Classes/**/*.h'
   s.dependency 'Flutter'
