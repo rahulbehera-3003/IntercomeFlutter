@@ -62,7 +62,7 @@ public class IntercomIosPlugin: NSObject, FlutterPlugin, IosIntercomApi {
         Intercom.loginUser(with: attributes) { result in
             switch result {
             case .success(): completion(Result.success(Void()))
-            case .failure(let error as NSError): completion(Result.failure(converToIntercomError(error: error)))
+            case .failure(let error as NSError): completion(Result.failure(convertIntercomErrorToFlutter(error: error)))
             }
         }
     }
@@ -75,7 +75,7 @@ public class IntercomIosPlugin: NSObject, FlutterPlugin, IosIntercomApi {
         return Intercom.loginUser(with: attributes) { result in
             switch result {
             case .success(): completion(Result.success(Void()))
-            case .failure(let error as NSError): completion(Result.failure(converToIntercomError(error: error)))
+            case .failure(let error as NSError): completion(Result.failure(convertIntercomErrorToFlutter(error: error)))
             }
         }
     }
@@ -87,7 +87,7 @@ public class IntercomIosPlugin: NSObject, FlutterPlugin, IosIntercomApi {
         Intercom.loginUser(with: attributes) { result in
             switch result {
             case .success(): completion(Result.success(Void()))
-            case .failure(let error as NSError): completion(Result.failure(converToIntercomError(error: error)))
+            case .failure(let error as NSError): completion(Result.failure(convertIntercomErrorToFlutter(error: error)))
             }
         }
     }
@@ -96,7 +96,7 @@ public class IntercomIosPlugin: NSObject, FlutterPlugin, IosIntercomApi {
         return Intercom.loginUnidentifiedUser(){ result in
             switch result {
             case .success(): completion(Result.success(Void()))
-            case .failure(let error as NSError): completion(Result.failure(converToIntercomError(error: error)))
+            case .failure(let error as NSError): completion(Result.failure(convertIntercomErrorToFlutter(error: error)))
             }
         }
     }
@@ -184,13 +184,13 @@ public class IntercomIosPlugin: NSObject, FlutterPlugin, IosIntercomApi {
 }
 
 
-func converToIntercomError(error: NSError) -> FlutterError {
-    let code = String(error.code)
+func convertIntercomErrorToFlutter(error: NSError) -> FlutterError {
+    let code = error.code
     let message = error.localizedDescription
     
     let details : NSMutableDictionary = NSMutableDictionary.init();
     details["errorCode"] = code
     details["errorMessage"] = message
     
-    return FlutterError(code: code, message: message, details: details)
+    return FlutterError(code: String(code), message: message, details: details)
 }

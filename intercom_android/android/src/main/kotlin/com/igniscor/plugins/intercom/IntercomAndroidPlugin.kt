@@ -209,12 +209,12 @@ class IntercomAndroidPlugin : FlutterPlugin, AndroidIntercomApi, EventChannel.St
     }
 
     private fun convertIntercomErrorToFlutter(error: IntercomError): FlutterError {
-        val code = error.errorCode.toString()
+        val code = error.errorCode
         val message = error.errorMessage
         val details = mapOf(
             "errorCode" to code,
             "errorMessage" to message,
         )
-        return FlutterError(code, message, details)
+        return FlutterError(code.toString(), message, details)
     }
 }
