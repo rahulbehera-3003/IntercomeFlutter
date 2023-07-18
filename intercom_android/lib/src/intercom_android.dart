@@ -5,7 +5,7 @@ import 'package:intercom_platform_interface/intercom_platform_interface.dart';
 class AndroidIntercom extends IntercomPlatform {
   final AndroidIntercomApi _intercomApi = AndroidIntercomApi();
 
-  /// Registers this class as the default instance of [PathProviderPlatform].
+  /// Registers this class as the default instance of [IntercomPlatform].
   static void registerWith() {
     IntercomPlatform.instance = AndroidIntercom();
   }
