@@ -22,4 +22,4 @@ See https://flutter.dev/go/platform-interface-breaking-changes for a discussion
 on why a less-clean interface is preferable to a breaking change.
 
 [1]: ../intercom_flutter_plugin
-[2]: lib/intercom_platform_interface.dart
+[2]: lib/src/intercom_platform_interface.dart
