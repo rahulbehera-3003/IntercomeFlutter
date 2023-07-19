@@ -1,7 +1,7 @@
 name: intercom_android
 description: Android implementation of the intercom_flutter_plugin.
 repository: https://github.com/chuvakpavel/IntercomeFlutter/tree/main/intercom_android
-version: 1.0.0
+version: 1.0.1
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
@@ -10,7 +10,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  intercom_platform_interface: ^1.0.0
+  intercom_platform_interface: ^1.0.1
 
 dev_dependencies:
   flutter_test:
