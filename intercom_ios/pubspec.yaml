@@ -1,5 +1,5 @@
 name: intercom_ios
-description: iOS implementation of the intercom_plugin.
+description: iOS implementation of the intercom_flutter_plugin.
 repository: https://github.com/chuvakpavel/IntercomeFlutter/tree/main/intercom_ios
 version: 1.0.0
 
@@ -21,7 +21,7 @@ dev_dependencies:
 
 flutter:
   plugin:
-    implements: intercom_plugin
+    implements: intercom_flutter_plugin
     platforms:
       ios:
         dartPluginClass: IosIntercom

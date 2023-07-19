@@ -5,7 +5,7 @@
 Pod::Spec.new do |s|
   s.name             = 'intercom_ios'
   s.version          = '1.0.0'
-  s.summary          = 'iOS implementation of the intercom_plugin.'
+  s.summary          = 'iOS implementation of the intercom_flutter_plugin.'
   s.description      = <<-DESC
 A new Flutter project.
                        DESC

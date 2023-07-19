@@ -1,5 +1,5 @@
 name: intercom_platform_interface
-description: A common platform interface for the intercom_plugin.
+description: A common platform interface for the intercom_flutter_plugin.
 version: 1.0.0
 issue_tracker: https://github.com/chuvakpavel/IntercomeFlutter/issues
 repository: https://github.com/chuvakpavel/IntercomeFlutter/tree/main/intercom_platform_interface
