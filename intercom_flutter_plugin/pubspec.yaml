@@ -11,9 +11,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  intercom_android: ^1.0.0
-  intercom_ios: ^1.0.0
-  intercom_platform_interface: ^1.0.0
+  intercom_android: ^1.0.1
+  intercom_ios: ^1.0.1
+  intercom_platform_interface: ^1.0.1
 
 dev_dependencies:
   flutter_lints: ^2.0.2
