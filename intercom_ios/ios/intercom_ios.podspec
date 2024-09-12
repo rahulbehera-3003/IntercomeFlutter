@@ -18,7 +18,7 @@ A new Flutter project.
   s.dependency 'Flutter'
   s.dependency 'Intercom'
   s.static_framework = true
-  s.dependency 'Intercom', '15.0.3'
+  s.dependency 'Intercom', '17.4.0'
   s.platform = :ios, '13.0'
 
   # Flutter.framework does not contain a i386 slice.
